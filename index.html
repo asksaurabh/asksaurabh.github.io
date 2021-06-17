@@ -6,15 +6,27 @@
     <meta charset="utf-8">
     <style>
         a {
-            color: red;
+            color: green;
         }
 
-        div {
+        #exec-bio {
+            background-color: lightgray;
+        }
+
+        #first-link a {
+            background-color: orange;
+        }
+
+        .bio-box {
             border: 1px solid black;
         }
 
-        div a {
-            color: burlywood;
+        .bio-box a {
+            color: magenta;
+        }
+
+        .trial-box {
+            background-color: azure;
         }
     </style>
 </head>
@@ -22,7 +34,7 @@
 <body>
     <h1>I'm an h1</h1>
     <ul>
-        <li>
+        <li id="first-link">
             <a href="https://example.com/">Link</a>
         </li>
         <li>
@@ -34,16 +46,16 @@
     </ul>
 
     <h2>I'm an h2</h2>
-    <div>
+    <div id="exec-bio" class="bio-box trial-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box trial-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box trial-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
-    <div>
+    <div class="bio-box trial-box">
         <a href="https://example.com/">I'm a link</a>
     </div>
 </body>
